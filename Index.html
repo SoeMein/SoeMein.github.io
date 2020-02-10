@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mian.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3 id=name2></h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">deep.sea</a>
+            </header>
+
+            <h1><span>The Healthy</span> Relaxing Experience</h1>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam esse sint error vitae laborum ratione fuga minus maiores commodi. Natus.</p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="name">Enter your Name:</label>
+                        <input type="text" name="name" id="name" autocomplete="off"></input>
+                        <p>Example: "David"</p>
+                    </div>
+
+                    <input type="button" value="Click Now" id="cta-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Awesome.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, maiores reprehenderit explicabo ab ad illo eveniet enim velit, exercitationem et recusandae placeat? Maiores laboriosam libero dolore consectetur! Omnis, recusandae expedita!</p>
+        </div>
+        <img src="Image/bg3.jpg" alt="Picture of food in a bowl">
+    </section>
+    <script>
+                let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+            let x = document.getElementById("name").value;
+            document.getElementById("name2").innerHTML ="Hello "+ x;
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+            document.getElementById("name").focus();
+
+            
+        })
+    </script>
+</body>
+</html>
