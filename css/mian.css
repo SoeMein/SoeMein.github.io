@@ -20,6 +20,10 @@ body {
     padding-bottom: 4em;
 }
 
+.d1{
+    margin-right: 15em;
+}
+
 header {
     padding: 1em 0;
 }
@@ -30,6 +34,8 @@ header {
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+
 
 section {
     margin: 0 1em;
